@@ -1,0 +1,345 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Islandbane Hub | DOORS 👁️", HidePremium = false, IntroText = "The Only Hub You'll Ever Need", SaveConfig = true, ConfigFolder = "DoorsHubReal"})
+
+local ItemsTab = Window:MakeTab({
+    Name = "Items",
+    Icon = "rbxassetid://10962930858",
+    PremiumOnly = false
+})
+
+local function ExecuteLoadStringFromURL(scriptUrl)
+    local loadedScript = loadstring(game:HttpGet(scriptUrl))
+    if loadedScript then
+        local success, error = pcall(loadedScript)
+        if not success then
+            warn("Error executing script from URL:", error)
+        end
+    else
+        warn("Failed to load script from URL:", scriptUrl)
+    end
+end
+
+ItemsTab:AddButton({
+    Name = "Black Hole",
+    Callback = function()
+        ExecuteLoadStringFromURL('https://raw.githubusercontent.com/iimateiYT/Scripts/main/Black%20Hole.lua')
+    end
+})
+
+ItemsTab:AddButton({
+    Name = "Paintball Gun",
+    Callback = function()
+        ExecuteLoadStringFromURL('https://raw.githubusercontent.com/iimateiYT/Scripts/main/Paintball%20Gun.lua')
+    end
+})
+
+ItemsTab:AddButton({
+    Name = "Shears",
+    Callback = function()
+        ExecuteLoadStringFromURL('https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/shears_done.lua')
+    end
+})
+
+ItemsTab:AddButton({
+    Name = "Robot (Q To Destroy)",
+    Callback = function()
+        ExecuteLoadStringFromURL('https://raw.githubusercontent.com/iimateiYT/Scripts/main/Destruction%20Robot.lua')
+    end
+})
+
+ItemsTab:AddButton({
+    Name = "Crucifix (Q + LEFT CLICK)",
+    Callback = function()
+        ExecuteLoadStringFromURL('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua')
+    end
+})
+
+ItemsTab:AddButton({
+    Name = "Vitamins",
+    Callback = function()
+        ExecuteLoadStringFromURL('https://pastebin.com/raw/6kELazVL')
+    end
+})
+
+ItemsTab:AddButton({
+    Name = "BTools",
+    Callback = function()
+        ExecuteLoadStringFromURL('https://pastebin.com/LETNPL0E')
+    end
+})
+
+
+    ItemsTab:AddButton({
+        Name = "Flashlight",
+        Callback = function()
+            ExecuteLoadStringFromURL('https://raw.githubusercontent.com/K0t1n/Public/main/Flashlight.lua')
+        end
+    })
+
+ItemsTab:AddButton({
+        Name = "Subspace Tripmine",
+        Callback = function()
+            ExecuteLoadStringFromURL('https://pastebin.com/XXYXU4Vq')
+        end
+    })
+
+ItemsTab:AddButton({
+        Name = "Debug Stick (In Door 0)",
+        Callback = function()
+            ExecuteLoadStringFromURL('https://pastebin.com/raw/zeFBYYy9')
+        end
+    })
+
+ItemsTab:AddButton({
+        Name = "Whopper Burger",
+        Callback = function()
+            ExecuteLoadStringFromURL('https://raw.githubusercontent.com/K0t1n/Public/main/Debug%20Stick')
+        end
+    })
+
+ItemsTab:AddButton({
+        Name = "F3X Tools",
+        Callback = function()
+            ExecuteLoadStringFromURL('https://raw.githubusercontent.com/iimateiYT/Scripts/main/F3X.lua')
+        end
+    })
+
+ItemsTab:AddButton({
+        Name = "Rubber Chicken",
+        Callback = function()
+            ExecuteLoadStringFromURL('https://raw.githubusercontent.com/iimateiYT/Scripts/main/Chicken%20Mod.lua')
+        end
+    })
+
+
+local CheatsTab = Window:MakeTab({
+    Name = "Cheats",
+    Icon = "rbxassetid://11214097781",
+    PremiumOnly = false
+})
+
+CheatsTab:AddButton({
+    Name = "MsDoors",
+    Callback = function()
+        ExecuteLoadStringFromURL('https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSHUB_Loader.lua')
+    end
+})
+
+CheatsTab:AddButton({
+    Name = "Nerd V5",
+    Callback = function()
+        ExecuteLoadStringFromURL('https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/NeRDV5.lua')
+    end
+})
+
+CheatsTab:AddButton({
+    Name = "Doors To Rooms",
+    Callback = function()
+        ExecuteLoadStringFromURL('https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/doorsroomdone.lua')
+    end
+})
+
+CheatsTab:AddButton({
+    Name = "Bobhub",
+    Callback = function()
+        ExecuteLoadStringFromURL('https://raw.githubusercontent.com/KINGHUB01/BlackKing/main/BlackKingMb')
+    end
+})
+
+ local EntitiesTab = Window:MakeTab({
+	Name = "Entities",
+	Icon = "rbxassetid://10974441727",
+	PremiumOnly = false
+})
+
+
+EntitiesTab:AddButton({
+        Name = "Entity Spawner",
+        Callback = function()
+            ExecuteLoadStringFromURL('https://pastebin.com/raw/mxaWXK9m')
+        end
+    })
+
+local FunTab = Window:MakeTab({
+    Name = "Fun",
+    Icon = "rbxassetid://11221011755",
+    PremiumOnly = false
+})
+
+FunTab:AddButton({
+        Name = "Flamethrower",
+        Callback = function()
+            ExecuteLoadStringFromURL('https://raw.githubusercontent.com/K0t1n/Public/main/Flamethrower')
+        end
+    })
+
+FunTab:AddButton({
+        Name = "Chocolate Bar",
+        Callback = function()
+            ExecuteLoadStringFromURL('https://raw.githubusercontent.com/K0t1n/Public/main/Chocolate%20Bar.lua')
+        end
+    })
+
+FunTab:AddButton({
+        Name = "Magic Book",
+        Callback = function()
+            ExecuteLoadStringFromURL('https://raw.githubusercontent.com/K0t1n/Public/main/Magic%20Book')
+        end
+    })
+
+FunTab:AddButton({
+        Name = "Zeus Lightning",
+        Callback = function()
+            ExecuteLoadStringFromURL('ttps://raw.githubusercontent.com/K0t1n/Public/main/Zeus%20Lightning.lua')
+        end
+    })
+         
+
+    local ChallengeTab = Window:MakeTab({
+    Name = "Challenges",
+    Icon = "rbxassetid://11232581784",
+    PremiumOnly = false
+})
+
+ChallengeTab:AddButton({
+        Name = "Impossible Mode",
+        Callback = function()
+            ExecuteLoadStringFromURL('https://raw.githubusercontent.com/Ukazix/impossible-mode/main/Protected_79.lua.txt')
+        end
+    })
+
+ChallengeTab:AddButton({
+        Name = "Hardcore Mode",
+        Callback = function()
+            ExecuteLoadStringFromURL('https://pastebin.com/e5UZ4yaw')
+        end
+    })
+
+ChallengeTab:AddButton({
+        Name = "Blind Mode",
+        Callback = function()
+            ExecuteLoadStringFromURL('https://raw.githubusercontent.com/iimateiYT/Scripts/main/Blind.lua')
+        end
+    })
+
+ local BetaTab = Window:MakeTab({
+    Name = "Beta",
+    Icon = "rbxassetid://12351002072",
+    PremiumOnly = false
+})
+
+BetaTab:AddButton({
+        Name = "A-1000 Tablet In Rift",
+        Callback = function()
+            ExecuteLoadStringFromURL('https://pastebin.com/raw/bucRxAMi')
+        end
+    })
+
+BetaTab:AddButton({
+        Name = "Hardcore; Hard & Harder & Hardest",
+        Callback = function()
+            ExecuteLoadStringFromURL('https://raw.githubusercontent.com/FreemanGitMog/script/main/HardcoreReignited%20(2).lua')
+        end
+    })
+
+local InsaneTab = Window:MakeTab({
+    Name = "Insane Scripts",
+    Icon = "rbxassetid://12231566898",
+    PremiumOnly = false
+})
+
+InsaneTab:AddButton({
+        Name = "Infinite Yield (Admin)",
+        Callback = function()
+            ExecuteLoadStringFromURL('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source')
+        end
+    })
+
+InsaneTab:AddButton({
+        Name = "Dex Explorer (V5)",
+        Callback = function()
+            ExecuteLoadStringFromURL('https://raw.githubusercontent.com/dyyll/Dex-V5-leak/main/Dex%20V5.lua')
+        end
+    })
+
+InsaneTab:AddButton({
+        Name = "Anticheat Bypass (Execute in Pre-Shop)",
+        Callback = function()
+            ExecuteLoadStringFromURL('https://raw.githubusercontent.com/dyyll/Dex-V5-leak/main/Dex%20V5.lua')
+        end
+    })
+
+InsaneTab:AddButton({
+        Name = "Force Revive (Use when dead)",
+        Callback = function()
+            ExecuteLoadStringFromURL('https://raw.githubusercontent.com/idfk122121/script/main/main.md')
+       end
+    })
+
+InsaneTab:AddButton({
+        Name = "Kill Yourself.",
+        Callback = function()
+            ExecuteLoadStringFromURL('https://pastebin.com/MG2Q6L2S')
+       end
+    })
+
+
+
+
+
+
+
+
+local RoomsTab = Window:MakeTab({
+    Name = "The Rooms",
+    Icon = "rbxassetid://12337656591",
+    PremiumOnly = false
+})
+
+InsaneTab:AddButton({
+        Name = "Auto A-1000",
+        Callback = function()
+            ExecuteLoadStringFromURL('https://pastebin.com/gJxfmM50')
+       end
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+    
+
+
+
+
+
+
+
+OrionLib:Init()
+
+
