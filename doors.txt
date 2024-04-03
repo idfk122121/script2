@@ -279,7 +279,7 @@ InsaneTab:AddButton({
 InsaneTab:AddButton({
         Name = "Kill Yourself.",
         Callback = function()
-            ExecuteLoadStringFromURL('https://pastebin.com/MG2Q6L2S')
+            ExecuteLoadStringFromURL('https://pastebin.com/raw/pCSi3KgA')
        end
     })
 
